@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-size: 22px;
+    background-color: #b4b4b4; 
+}
+body h1{
+    font-family: "Impact";
+    font-variant: small-caps;
+}
+
+/* BOTONES */
+.btn_add{
+    font: 1rem sans-serif;
+    color: rgb(0, 0, 0);
+    width: 5rem;
+    height: 2rem;
+    transition: background-color 0.5s ease; 
+}
+.btn_op[value="Delete"] {
+    color: red;
+}
+.btn_op[value="Check"]{
+    color: green;
+}
+.btn_op[value="Uncheck"]{
+    color: red;
+    font-style: oblique;
+    
+}
+.btn_op{
+    font: 1rem sans-serif;
+    font-weight: bold;
+    width: 5rem;
+    transition: background-color 0.3s ease; 
+    border-bottom-right-radius: 33%;
+    border-top-left-radius: 10%;
+}
+
+/* Inputs y form */
+input[type="checkbox"]{
+    pointer-events: none;
+}
+input[type="text"]{
+    width: 10rem;
+    height: 22px;
+}
+label{
+    font-family: Tahoma;
+}
+.container_addtodo{
+    background-color: rgb(211, 205, 160);
+}
+
+
+
+
+/* TABLA */
+.container_table{
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.table_row_checked {
+    text-decoration: line-through;
+    font-style: italic;
+}
+/* Checkbox estatico controlado por php */
+
+.row_table{
+    /* Propiedad a animar y duración de la transición */
+    transition: background-color 0.3s ease; 
+
+}
+.row_table:nth-child(even){
+    background: #989898;
+}
+.row_table:hover{
+    background: #dedede;
+}
